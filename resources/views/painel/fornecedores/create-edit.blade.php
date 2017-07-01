@@ -108,19 +108,17 @@
                             <option value="Brasil">Brasil</option>
                              
                                 @foreach($paises as $pais)
-                                    <option value="{{$pais}}"
+                                    <option value="{{$pais->pais}}"
                                      
                                         @if (isset($fornecedor) && $fornecedor->pais == $pais)
                                             selected
                                        @endif               
 
-                                    > {{$pais}}</option>
+                                    > {{$pais->pais}}</option>
                                 @endforeach
                            
                         </select>
                     </div> 
-                    
-                
                 </div>    
             </div>    
             

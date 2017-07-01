@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Painel;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Models\Painel\Fornecedores;
+use App\Models\Painel\Paises;
 use \Illuminate\Support\Facades\DB;
 
 class FornecedorController extends Controller
@@ -12,12 +13,15 @@ class FornecedorController extends Controller
     
 
     private $fornecedor;
+    private $paises;
     private $totalPage = 10;
 
 
-    public function __construct(Fornecedores $fornecedor){
+    public function __construct(Fornecedores $fornecedor, Paises $paises){
         
         $this->fornecedor = $fornecedor;
+        $this->paises = $paises;
+             
     
     }
 
@@ -45,9 +49,19 @@ class FornecedorController extends Controller
     {
         $title = 'Cadastrar Produto';
         
+        $paises = DB::table('paises')
+                ->select('id', 'pais')
+                ->orderby('pais', 'asc')
+                ->get();
+
+        
+       //echo '<pre>'; print_r($paises); echo '</pre>';
+       //die;
+
+       //$paises = ['Brasil', 'Chile','Peru'];
+        
         $estados = ['AC','AL','AP','AM','BA','CE','DF','ES','GO','MA','MT','MS','MG','PA','PB','PR','PE','PI','RJ','RN','RS','RO','RR','SC','SP','SE','TO'];
         
-        $paises = ['Brasil', 'Argentina'];
         
         return view('painel.fornecedores.create-edit', compact('title','estados','paises'));
     }

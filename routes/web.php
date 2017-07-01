@@ -5,18 +5,27 @@ Route::resource('/painel/produtos', 'Painel\ProdutoController');
 Route::resource('/painel/medidas', 'Painel\MedidaController');
 Route::resource('/painel/empresa', 'Painel\EmpresaController');
 Route::resource('/painel/fornecedores', 'Painel\FornecedorController');
+Route::resource('/painel/cidades', 'Painel\CidadeController');
+Route::resource('/painel/bairros', 'Painel\BairroController');
 
 Route::get('/painel', 'Painel\PainelController@index');
 Route::get('/painel/categorias', 'Painel\CategoriaController@index');
 Route::get('/painel/medidas', 'Painel\MedidaController@index');
-Route::post('/painel/categorias/pesquisa', 'Painel\CategoriaController@pesquisa');
 Route::get('/painel/imagens', 'Painel\ImagemController@index');
 Route::get('/painel/empresa', 'Painel\EmpresaController@index');
 Route::get('/painel/configuracoes', 'Painel\ConfiguracoesController@index');
 Route::get('/painel/fornecedores', 'Painel\FornecedorController@index');
+Route::get('/painel/cidades', 'Painel\CidadeController@index');
+Route::get('/painel/bairros', 'Painel\BairroController@index');
 
 
 
+
+
+
+/* pesquisa cidade */
+Route::get('/painel/cidades/busca', 'Painel\CidadeController@busca');
+Route::post('/painel/cidades/busca', 'Painel\CidadeController@busca');
 
 
 

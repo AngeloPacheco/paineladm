@@ -111,14 +111,11 @@ ul.painel-itens-menu a i{
 
 /*Listagens*/
 .painel-btn-add{
-    margin-bottom: 20px;
     background-color: #94b9d9;
     float: left;
+    margin: 0px 0px 0px 10px;
 }
-.painel-btn-pesquisar{
-    color: #fff;
-    background-color: #94b9d9;
-}
+
 .painel-cabecalho{
     font-size: 1.4em;
 }
@@ -272,5 +269,17 @@ input[type="file"] {
     margin: 0px 30px 0px 0px;
 }
 .painel-panel{
-    margin-top: 160px;
+    margin-top: 20px;
 }
+
+
+/*  BUSCA 
+------------------------------*/
+.msg-busca{
+    margin-left: 10px;
+}
+.painel-btn-pesquisar{
+    color: #fff;
+    background-color: #94b9d9;
+}
+/* -----------------------------*/

@@ -33,7 +33,7 @@ class ProdutoController extends Controller
         $categorias = DB::table('categorias')
                      ->select('id','descricao')
                      ->get();
-        
+
         $produtos = $this->produto->orderBy('descricao','asc')->paginate($this->totalPage);
         
         return view('painel.produtos.index', compact('title', 'produtos','categorias'));
@@ -72,8 +72,6 @@ class ProdutoController extends Controller
     {
         $dataForm = $request->all();
         
-        
-
         echo '<pre>'; var_dump($dataForm['produto-titulo']); echo '</pre>';
         
         die;

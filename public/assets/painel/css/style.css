@@ -122,9 +122,13 @@ ul.painel-itens-menu a i{
 .edit{
     background: #94b9d9;
 }
-.delete{
-    background: rgba(60, 118, 61, 0.78);
+.eye{
+    background: #3c763d;
 }
+.delete{
+    background: #e65a5a
+}
+
 
 .actions delete{
     

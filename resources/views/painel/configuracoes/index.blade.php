@@ -82,6 +82,18 @@
             </div>    
         </div>
     </a>
+    <a class="links" href="{{url('painel/logradouros')}}" title='Logradouros'>  
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="opcoes-configs">
+                <i class="fa fa-address-book-o" aria-hidden="true"></i>
+                <div class="titulo-configs">
+                    <h3 class="opcao-config">
+                        Logradouros
+                    </h3>
+                </div>
+            </div>    
+        </div>
+    </a>
 
     
 </div>   

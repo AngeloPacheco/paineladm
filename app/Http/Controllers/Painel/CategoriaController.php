@@ -135,7 +135,7 @@ class CategoriaController extends Controller
             return redirect('/painel/categorias');
         }    
         else {
-            return redirect()->route('produtos.show', $id)->with(['errors' => 'Erro ao exluir o produto']);
+            return redirect()->route('categorias.show', $id)->with(['errors' => 'Erro ao exluir a categoria']);
         }
     }
 }

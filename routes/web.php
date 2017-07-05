@@ -27,11 +27,14 @@ Route::post('/painel/cidades/busca', 'Painel\CidadeController@busca');
 Route::get('/painel/bairros/busca', 'Painel\BairroController@busca');
 Route::post('/painel/bairros/busca', 'Painel\BairroController@busca');
 
+/* pesquisa logradouro */
+Route::get('/painel/logradouros/busca', 'Painel\LogradouroController@busca');
+Route::post('/painel/logradouros/busca', 'Painel\LogradouroController@busca');
 
 
 
-
-
+/* Rota Ajax busca bairros pertecentes a uma cidade */
+Route::get('/painel/get-bairros/{idCidade}', 'Painel\BuscaController@getBairros');
 
 
 Route::group(['namespace' => 'Site'], function() {

@@ -37,7 +37,7 @@
                 <i class="fa fa-tags" aria-hidden="true" ></i>
                 <div class="titulo-configs">
                     <h3 class="opcao-config">
-                        Categorias
+                        <p>Categorias <br><br> de Produtos </p>
                     </h3>
                 </div>
             </div>    
@@ -57,38 +57,13 @@
         </div>
     </a>
 
-    <a class="links" href="{{url('painel/cidades')}}" title='Cidades'>  
+    <a class="links" href="{{url('painel/transportadoras')}}" title='Transportadoras'>  
         <div class="col-md-3 col-sm-4 col-xs-12">
             <div class="opcoes-configs">
-                <i class="fa fa-picture-o" aria-hidden="true"></i>
+                <i class="fa fa-truck" aria-hidden="true"></i>
                 <div class="titulo-configs">
                     <h3 class="opcao-config">
-                        Cidades 
-                    </h3>
-                </div>
-            </div>    
-        </div>
-    </a>
-
-    <a class="links" href="{{url('painel/bairros')}}" title='Bairros'>  
-        <div class="col-md-3 col-sm-4 col-xs-12">
-            <div class="opcoes-configs">
-                <i class="fa fa-address-card" aria-hidden="true"></i>
-                <div class="titulo-configs">
-                    <h3 class="opcao-config">
-                        Bairros 
-                    </h3>
-                </div>
-            </div>    
-        </div>
-    </a>
-    <a class="links" href="{{url('painel/logradouros')}}" title='Logradouros'>  
-        <div class="col-md-3 col-sm-4 col-xs-12">
-            <div class="opcoes-configs">
-                <i class="fa fa-address-book-o" aria-hidden="true"></i>
-                <div class="titulo-configs">
-                    <h3 class="opcao-config">
-                        Logradouros
+                        Transportadoras 
                     </h3>
                 </div>
             </div>    

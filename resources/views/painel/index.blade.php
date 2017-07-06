@@ -8,7 +8,7 @@
    <link rel="stylesheet" href="{{url('assets/painel/css/style.css')}}"/>
    <link rel="stylesheet" href="{{url('assets/all/css/font-awesome.min.css')}}"/>
    <link rel="shortcut icon" href="{{url('assets/painel/imgs/tag.png')}}" type="image/x-icon" />
-   
+
 
   
 </head>
@@ -95,8 +95,9 @@
     <script src="{{url('assets/all/js/bootstrap.min.js')}}"></script>
     <script src="{{url('assets/painel/js/main.js')}}"></script>
     <script src="{{url('assets/painel/js/jquery.maskedinput.min.js')}}"></script>
-    
+
       @yield('post-script')
+      @yield('post-script-logradouros')
 
     
 

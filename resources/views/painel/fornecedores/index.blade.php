@@ -4,6 +4,17 @@
 <h1 class='painel-title'>Fornecedores</h1>
 <hr>
 
+<div class="form-search">
+     <form class="form-inline" name="formPesquisa" method="post" role="form" action="{{url('painel/fornecedores/busca')}}">
+
+         <input class="form-control" type="text" name="descricao" value="" placeholder="Pesquisar"  title='Pesquisa por Razão Social, Nome Fantasia ou CNPJ' autofocus="" size="20">
+         {!! csrf_field()!!}
+        <button class="btn btn-primary painel-btn-pesquisar" type="submit" title="Pesquisar">
+                <span class="fa fa-search"></span>
+        </button>
+    </form>
+</div>
+
 <table class="table table-striped">
     <tr class="painel-cabecalho">
         <th>Razão Social</th>
@@ -18,7 +29,7 @@
         <tr>
             <td>{{$fornecedor->razao_social}}</td> 
             <td>{{$fornecedor->nome_fantasia}}</td> 
-            <td>{{$fornecedor->cidade}}</td> 
+            <td>{{$fornecedor->localidade}}</td> 
             <td>{{$fornecedor->uf}}</td> 
             <td>{{$fornecedor->telefone}}</td> 
             <td>{{$fornecedor->contato}}</td> 
@@ -27,7 +38,7 @@
                     <span class="fa fa-pencil" title="Editar"></span>
                 </a>
                 <a class="actions delete" href="{{route('fornecedores.show', $fornecedor->id)}}">
-                   <span class="fa fa-eye" title="Detalhe do fornecedor"></span>
+                   <span class="fa fa-eye" title="Detalhes"></span>
                 </a>
             </td>
         </tr>

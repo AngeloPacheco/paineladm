@@ -20,18 +20,18 @@ class CreateEmpresasTable extends Migration
                 $table->string('responsavel',80)->nullable();
                 $table->string('cnpj',45)->nullable();
                 $table->string('inscricao_estadual',45)->nullable();
-                $table->string('endereco',45)->nullable();
-                $table->integer('numero')->nullable();
-                $table->string('complemento',15)->nullable();
-                $table->string('bairro',80)->nullable();
-                $table->string('cidade',80)->nullable();
-                $table->string('uf',2)->nullable();
-                $table->string('cep',15)->nullable();
+                $table->string('logradouro',45)->nulllable();
+                $table->string('numero',10)->nulllable();
+                $table->string('complemento',20)->nulllable();
+                $table->string('bairro',45)->nulllable();
+                $table->string('localidade',45)->nulllable();
+                $table->string('cep',45)->nulllable();
+                $table->char('uf',2)->nulllable();
                 $table->string('email',80)->nullable();
                 $table->string('site',0)->nullable();
                 $table->string('telefone',50)->nullable();
                 $table->string('fax',50)->nullable();
-                $table->string('celular',50)->nullable();
+                $table->string('celular',50)->nullable();  
                 $table->timestamps();
         });
     }

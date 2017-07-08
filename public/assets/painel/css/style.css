@@ -78,7 +78,7 @@ img.user-dashboard{
 
 /*Menu*/
 .painel-navbar{
-    background-color: rgba(51, 122, 183, 0.52);
+    background-color: #104a7b;
     float: left;
     width: 100%;
     max-height: -1px;
@@ -111,7 +111,7 @@ ul.painel-itens-menu a i{
 
 /*Listagens*/
 .painel-btn-add{
-    background-color: #94b9d9;
+    background-color: #104a7b;
     float: left;
     margin: 0px 0px 0px 10px;
 }
@@ -120,7 +120,7 @@ ul.painel-itens-menu a i{
     font-size: 1.4em;
 }
 .edit{
-    background: #94b9d9;
+    background: #104a7b;
 }
 .eye{
     background: #3c763d;
@@ -230,7 +230,7 @@ input[type="file"] {
     padding: 0px;
 }
 /*
-   ConfiguraÃ§Ãµes
+   ConfiguraÃƒÂ§ÃƒÂµes
 */
 .lista-configs{
     float: left;
@@ -244,25 +244,25 @@ input[type="file"] {
     width: 100%;
     margin: 10px 0px;
     border-radius: 6px;
-    height: 69px; 
+    height: 90px;
     cursor:pointer;
 }
 .opcoes-configs i{
     font-size: 4em;
     float: left;
-    background: #8eb3d3;
+    background: #104a7b;
     color: #FFF;
-    padding: 6px;
+    padding: 10px;
+    height: 90px;
     border-bottom-left-radius: 6px;
-    border-top-left-radius: 6px
-    
+    border-top-left-radius: 6px;
 }
 .titulo-configs{
     float: left;   
 }
 .opcao-config{
-    font-size: 0.8em;
-    margin: 25px 15px;
+    font-size: 11px;
+    margin: 30px 15px;
     color : #000000;
 }
 
@@ -285,8 +285,14 @@ input[type="file"] {
 }
 .painel-btn-pesquisar{
     color: #fff;
-    background-color: #94b9d9;
+    background-color: #104a7b;
 }
+.painel-btn-pesquisar:hover{
+    text-decoration: none;
+    color: #FFF;
+}
+
+
 /* -----------------------------*/
 
 

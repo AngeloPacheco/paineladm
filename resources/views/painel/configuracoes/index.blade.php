@@ -70,6 +70,32 @@
         </div>
     </a>
 
+    <a class="links" href="{{url('painel/forma-pagamentos')}}" title='Forma de Pagamentos'>  
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="opcoes-configs">
+                <i class="fa fa-dollar" aria-hidden="true"></i>
+                <div class="titulo-configs">
+                    <h3 class="opcao-config">
+                        Forma de   <br><br> Pagamentos
+                    </h3>
+                </div>
+            </div>    
+        </div>
+    </a>
+
+    <a class="links" href="{{url('painel/cat-contas-pagar')}}" title='Categoras contas a pagar'>  
+        <div class="col-md-3 col-sm-4 col-xs-12">
+            <div class="opcoes-configs">
+                <i class="fa fa-tags" aria-hidden="true"></i>
+                <div class="titulo-configs">
+                    <h3 class="opcao-config">
+                        Categorias <br> contas <br> a pagar
+                    </h3>
+                </div>
+            </div>    
+        </div>
+    </a>
+
     
 </div>   
 @endsection

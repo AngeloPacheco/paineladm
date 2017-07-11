@@ -38,11 +38,20 @@ Route::get('/painel/forma-pagamentos/busca', 'Painel\FormaPagamentoController@bu
 Route::post('/painel/forma-pagamentos/busca', 'Painel\FormaPagamentoController@busca');
 
 /*   CATEGORIAS CONTAS A PAGAR */
-Route::get('/painel/cat-contas-pagar/delete/{id}', 'Painel\CatContasPagarController@destroy');
-Route::resource('/painel/cat-contas-pagar', 'Painel\CatContasPagarController');
-Route::get('/painel/cat-contas-pagar/busca', 'Painel\CatContasPagarController@busca');
-Route::post('/painel/cat-contas-pagar/busca', 'Painel\CatContasPagarController@busca');
+Route::get('/painel/categorias-contas-pagar/delete/{id}', 'Painel\CatContasPagarController@destroy');
+Route::resource('/painel/categorias-contas-pagar', 'Painel\CatContasPagarController');
+Route::get('/painel/categorias-contas-pagar/busca', 'Painel\CatContasPagarController@busca');
+Route::post('/painel/categorias-contas-pagar/busca', 'Painel\CatContasPagarController@busca');
                      
+
+/*   CONTAS A PAGAR */
+Route::get('/painel/contas-pagar/delete/{id}', 'Painel\ContasPagarController@destroy');
+Route::resource('/painel/contas-pagar', 'Painel\ContasPagarController');
+Route::get('/painel/contas-pagar/busca', 'Painel\ContasPagarController@busca');
+Route::post('/painel/contas-pagar/busca', 'Painel\ContasPagarController@busca');
+
+
+
 
   /*   IMAGENS  */
 Route::get('/painel/imagens', 'Painel\ImagemController@index');

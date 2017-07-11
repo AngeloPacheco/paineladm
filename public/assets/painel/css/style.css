@@ -38,7 +38,8 @@
     width: 100%;
 }
 .logo{
-    
+    max-width: 270px;
+    margin-top: 5px;
 }
 img.logo-painel{
      width: 320px;
@@ -81,7 +82,7 @@ img.user-dashboard{
     background-color: #104a7b;
     float: left;
     width: 100%;
-    max-height: -1px;
+    /* max-height: 0px; */
 }
 ul.painel-itens-menu{
     margin: 0px 10px 0px 25px;
@@ -94,6 +95,8 @@ ul.painel-itens-menu li a{
      font-size: 1.1em;
      color: #fff !important;
      font-weight: bold;
+     padding: 8px;
+     /* max-width: 184px; */
 }
 ul.painel-itens-menu a i{
     font-size: 1.6em;
@@ -230,7 +233,7 @@ input[type="file"] {
     padding: 0px;
 }
 /*
-   ConfiguraÃƒÂ§ÃƒÂµes
+   ConfiguraÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Â§ÃƒÆ’Ã†â€™Ãƒâ€šÃ‚Âµes
 */
 .lista-configs{
     float: left;
@@ -298,4 +301,18 @@ input[type="file"] {
 
 form .ng-invalid-cep {
   border: solid 1px red;
+}
+
+
+/*  CONTAS PAGAR E RECEBER */
+
+.panel-data-emissao{
+    
+   max-width: 50%;
+   float: right;
+
+}
+.panel-check-credores{
+    
+
 }

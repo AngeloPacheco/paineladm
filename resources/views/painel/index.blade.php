@@ -1,28 +1,31 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>{{$title or ''}} | Painel Administrativo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-     <!-- bootstrap-->
-   <link rel="stylesheet" href="{{url('assets/all/css/bootstrap.min.css')}}">
-   <link rel="stylesheet" href="{{url('assets/painel/css/style.css')}}"/>
-   <link rel="stylesheet" href="{{url('assets/all/css/font-awesome.min.css')}}"/>
-   <link rel="shortcut icon" href="{{url('assets/painel/imgs/tag.png')}}" type="image/x-icon" />
-
-
-  
-</head>
-<body class="painel-body">
+  <html>
+    <head>
     
-    <div class="container content">
-        <div class="row">
-            <div class="col-md-6 col-sm-6 col-xs-12">
+      <title>{{$title or ''}} | Painel Administrativo</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+       <!-- bootstrap-->
+      <link rel="stylesheet" href="{{url('assets/all/css/bootstrap.min.css')}}">
+      <link rel="stylesheet" href="{{url('assets/painel/css/style.css')}}"/>
+      <link rel="stylesheet" href="{{url('assets/all/css/font-awesome.min.css')}}"/>
+      <link rel="stylesheet" href="{{url('assets/painel/css/jquery-ui.css')}}"/>
+      <link rel="shortcut icon" href="{{url('assets/painel/imgs/tag.png')}}" type="image/x-icon" />
+
+
+
+    </head>
+
+      <body class="painel-body">
+    
+        <div class="container content">
+          <div class="row">
+              <div class="col-md-6 col-sm-6 col-xs-12">
                 <div class="logo">
-                    <img src="{{url('assets\painel\imgs\logo-painel.fw.png')}}" alt="logomarca" class="logo-painel img-responsive">
-               </div>
-            </div>
-            <div class="col-md-6 col-sm-6 col-xs-12">
-                <div class="top-dashboard">
+               <img src="{{url('assets\painel\imgs\logo-painel.fw.png')}}" alt="logomarca" class="logo-painelimg-responsive logo">
+                </div>
+              </div>
+              <div class="col-md-6 col-sm-6 col-xs-12">
+                  <div class="top-dashboard">
                     <div class="dropdown user-dash">
                        <div class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                            <img src="{{url('assets\painel\imgs\img-user.jpg')}}" alt="usuario" class="user-dashboard img-circle">
@@ -33,11 +36,11 @@
                            <li><a href="#">Perfil</a></li>
                            <li><a href="#">Sair</a></li>
                        </ul>
-                   </div>
-                </div>
-            </div>
+                    </div>
+                  </div>
+              </div>
+          </div> 
         </div> 
-    </div> 
 
     <!--Fim section topo-->
     <nav class="navbar navbar-default painel-navbar">
@@ -73,10 +76,17 @@
                       Fornecedores  
                     </a>
                 </li>
+                <li>
+                   <a href="{{url('painel/contas-pagar')}}" title="Contas a pagar">
+                        <i class="fa fa-money" aria-hidden="true" ></i>
+                        Contas a pagar
+                    </a>
+                 </li>   
                  <li>
                     <a href="{{url('painel/configuracoes')}}" title="Configurações do painel">
                       <i class="fa fa-cog" aria-hidden="true" ></i>
-                      Configurações</a>
+                      Configurações
+                    </a>
                 </li>
         </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -91,13 +101,22 @@
 
 <!-- Jquery -->
     <script src="{{url('assets/all/js/jquery-3.2.1.min.js')}}"></script>
+    <script src="{{url('assets/painel/js/jquery-ui.js')}}"></script>
     <!-- JS Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.10.6/moment.min.js"></script>  
     <script src="{{url('assets/all/js/bootstrap.min.js')}}"></script>
     <script src="{{url('assets/painel/js/main.js')}}"></script>
     <script src="{{url('assets/painel/js/jquery.maskedinput.min.js')}}"></script>
+  
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
+     <script src="{{url('assets/painel/js/setar-datas.js')}}"></script>
 
+
+     
+        
       @yield('post-script')
       @yield('post-script-logradouros')
+      @yield('setar-data')
 
     
 

@@ -83,7 +83,7 @@
         </div>
     </a>
 
-    <a class="links" href="{{url('painel/cat-contas-pagar')}}" title='Categoras contas a pagar'>  
+    <a class="links" href="{{url('painel/categorias-contas-pagar')}}" title='Categoras contas a pagar'>  
         <div class="col-md-3 col-sm-4 col-xs-12">
             <div class="opcoes-configs">
                 <i class="fa fa-tags" aria-hidden="true"></i>

@@ -107,24 +107,11 @@
                         <label class="painel-label">Cidade</label>
                         <input size="15" class="form-control" type='text' name="cidade" value="{{$empresa->cidade or old('cidade')}}">  
                     </div>
-                     
-                    <div class="form-group painel-form-input">  
-                        <label class="painel-label">UF</label>
-                        <select class="form-control" name="uf">
-                            <option value="">UF</option>
-                             
-                                @foreach($estados as $estado)
-                                    <option value="{{$estado}}"
-                                     
-                                        @if (isset($empresa) && $empresa->uf == $estado)
-                                          selected
-                                       @endif               
 
-                                    > {{$estado}}</option>
-                                @endforeach
-                           
-                        </select>
-                    </div> 
+                     <div class="form-group painel-form-input">
+                        <label class="painel-label">Estado</label>
+                        <input size="15" class="form-control" type='text' name="uf" value="{{$empresa->uf or old('uf')}}">  
+                    </div>
                       
                     <div class="form-group painel-form-input">
                         <label class="painel-label">CEP</label>
